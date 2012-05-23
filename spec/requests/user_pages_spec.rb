@@ -11,5 +11,4 @@ describe "UserPages" do
   it 'should have title Sign Up' do
     page.should have_selector('title', text:"Ruby on Rails Tutorial Sample App | Sign up")
   end
-
 end

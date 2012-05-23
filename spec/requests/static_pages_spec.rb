@@ -4,6 +4,14 @@ describe "Static pages" do
   
   describe "Home page" do
     before { visit root_path }
+    
+    it "should have the right links on the layout" do
+      click_link "About"
+      click_link "Help"
+      click_link "Contact"
+      click_link "Home"
+    end
+       
     it "should have the h1 'Sample App'" do
       page.should have_selector('h1', :text => 'Sample App')
     end
