@@ -16,13 +16,14 @@ describe User do
   
   subject { @user }
 
-# do these exist tests
+# do these user attributes exist tests
  
   it { should respond_to(:name) }
   it { should respond_to(:email) }
   it { should respond_to(:password_digest) }
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
+  it { should respond_to(:remember_token) }
   
   it { should be_valid }
   
